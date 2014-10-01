@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 mars 2014 16:00:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="PkgEntite.Etablissement" table="ETABLISSEMENT" schema="GESTFESTI14">
+        <id name="etaId" type="string">
+            <column name="ETA_ID" length="8" />
+            <generator class="assigned" />
+        </id>
+        <property name="etaNom" type="string">
+            <column name="ETA_NOM" length="45" not-null="true" />
+        </property>
+        <property name="etaRue" type="string">
+            <column name="ETA_RUE" length="45" not-null="true" />
+        </property>
+        <property name="etaCp" type="string">
+            <column name="ETA_CP" length="5" not-null="true" />
+        </property>
+        <property name="etaVille" type="string">
+            <column name="ETA_VILLE" length="35" not-null="true" />
+        </property>
+        <property name="etaTel" type="string">
+            <column name="ETA_TEL" length="13" not-null="true" />
+        </property>
+        <property name="etaMail" type="string">
+            <column name="ETA_MAIL" length="70" />
+        </property>
+        <property name="etaType" type="boolean">
+            <column name="ETA_TYPE" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="etaCivilresp" type="string">
+            <column name="ETA_CIVILRESP" length="12" not-null="true" />
+        </property>
+        <property name="etaNomresp" type="string">
+            <column name="ETA_NOMRESP" length="25" not-null="true" />
+        </property>
+        <property name="etaPrenomresp" type="string">
+            <column name="ETA_PRENOMRESP" length="25" />
+        </property>
+        <set name="offres" inverse="true">
+            <key>
+                <column name="OFF_ETABLISSEMENT" length="8" not-null="true" />
+            </key>
+            <one-to-many class="PkgEntite.Offre" />
+        </set>
+    </class>
+</hibernate-mapping>

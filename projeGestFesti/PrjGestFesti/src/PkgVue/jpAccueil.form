@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jlMessAcc3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlMessAcc2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="jlMessAcc1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jlMessAcc7" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlMessAcc6" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlMessAcc5" min="-2" max="-2" attributes="0"/>
+                  <Component id="jlMessAcc4" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="jlMessAcc1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+              <Component id="jlMessAcc2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jlMessAcc3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jlMessAcc4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jlMessAcc5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jlMessAcc6" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jlMessAcc7" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="65" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jlMessAcc1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bienvenue sur l&apos;application de gestion des festivals !"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cette application web permet de g&#xe9;rer l&apos;h&#xe9;bergement des groupes de musique durant le festival Folklores du Monde."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Elle offre les services suivants :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="- Consulter, cr&#xe9;er, modifier ou supprimer des &#xe9;tablissements acceptant d&apos;h&#xe9;berger les groupes de musiciens."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="- Consulter, cr&#xe9;er, modifier ou supprimer des caract&#xe9;ristiques de chambres."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="- Consulter, d&#xe9;clarer ou modifier les capacit&#xe9;s d&apos;accueil des &#xe9;tablissements."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlMessAcc7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="- Consulter, r&#xe9;aliser ou modifier les attributions des chambres aux groupes dans les &#xe9;tablissements."/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

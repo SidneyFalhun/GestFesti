@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 mars 2014 16:00:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="PkgEntite.Attribution" table="ATTRIBUTION" schema="GESTFESTI14">
+        <composite-id name="id" class="PkgEntite.AttributionId">
+            <key-property name="attEtablissement" type="string">
+                <column name="ATT_ETABLISSEMENT" length="8" />
+            </key-property>
+            <key-property name="attTypechambre" type="string">
+                <column name="ATT_TYPECHAMBRE" length="2" />
+            </key-property>
+            <key-property name="attGroupe" type="string">
+                <column name="ATT_GROUPE" length="4" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="offre" class="PkgEntite.Offre" update="false" insert="false" fetch="select">
+            <column name="ATT_ETABLISSEMENT" length="8" not-null="true" />
+            <column name="ATT_TYPECHAMBRE" length="2" not-null="true" />
+        </many-to-one>
+        <many-to-one name="groupe" class="PkgEntite.Groupe" update="false" insert="false" fetch="select">
+            <column name="ATT_GROUPE" length="4" not-null="true" />
+        </many-to-one>
+        <property name="attNbchambres" type="byte">
+            <column name="ATT_NBCHAMBRES" precision="2" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

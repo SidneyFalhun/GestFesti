@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 mars 2014 16:00:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="PkgEntite.Groupe" table="GROUPE" schema="GESTFESTI14">
+        <id name="gpId" type="string">
+            <column name="GP_ID" length="4" />
+            <generator class="assigned" />
+        </id>
+        <property name="gpNom" type="string">
+            <column name="GP_NOM" length="40" not-null="true" />
+        </property>
+        <property name="gpIdentresp" type="string">
+            <column name="GP_IDENTRESP" length="40" />
+        </property>
+        <property name="gpAdresse" type="string">
+            <column name="GP_ADRESSE" length="120" />
+        </property>
+        <property name="gpNbpers" type="byte">
+            <column name="GP_NBPERS" precision="2" scale="0" not-null="true" />
+        </property>
+        <property name="gpNompays" type="string">
+            <column name="GP_NOMPAYS" length="40" not-null="true" />
+        </property>
+        <property name="gpHebergement" type="char">
+            <column name="GP_HEBERGEMENT" length="1" not-null="true" />
+        </property>
+        <set name="attributions" inverse="true">
+            <key>
+                <column name="ATT_GROUPE" length="4" not-null="true" />
+            </key>
+            <one-to-many class="PkgEntite.Attribution" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jlEtabAJouter" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jlEtabTel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabMail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabType" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabResponsable" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabCiviliteResp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabNomResp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabPrenomResp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabID" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabNom" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabAdresse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabCP" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlEtabVille" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jtEtabTel" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jtEtabNomResp" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtEtabPrenomResp" alignment="0" pref="64" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jtEtabID" alignment="0" pref="60" max="32767" attributes="0"/>
+                                      <Component id="jtEtabNom" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtEtabAdresse" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtEtabCP" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtEtabVille" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtEtabMail" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jcEtabCiviliteResp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jcEtabType" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                      <Component id="jbEtabValider" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="jbEtabAnnuler" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="jlEtabAJouter" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jlEtabID" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabID" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabNom" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabAdresse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabAdresse" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabCP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabCP" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabVille" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabVille" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabTel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabTel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabMail" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jcEtabType" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="jlEtabResponsable" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabCiviliteResp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jcEtabCiviliteResp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabNomResp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabNomResp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jlEtabPrenomResp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtEtabPrenomResp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jbEtabValider" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbEtabAnnuler" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jlEtabAJouter">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ajouter un &#xe9;tablissement"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabID">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabNom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabAdresse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Adresse*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabCP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code Postal*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabVille">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ville*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabTel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="T&#xe9;l&#xe9;phone*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabMail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="E-mail:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Type*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabResponsable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Responsable:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabCiviliteResp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Civilit&#xe9;*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabNomResp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jlEtabPrenomResp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom*:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbEtabValider">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Valider"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbEtabValiderActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbEtabAnnuler">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Annuler"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jbEtabAnnulerMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabID">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtEtabIDActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabNom">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtEtabNomActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabAdresse">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtEtabAdresseActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabCP">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabVille">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtEtabVilleActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabTel">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtEtabTelActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabMail">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcEtabCiviliteResp">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="M"/>
+            <StringItem index="1" value="Mme"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcEtabCiviliteRespActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabNomResp">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtEtabPrenomResp">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcEtabType">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Etablissement scolaire"/>
+            <StringItem index="1" value="Autre"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcEtabTypeActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
