@@ -1,0 +1,85 @@
+-- Chaque Trigger doit être inséré un par un
+-- Trigger pour archivage de typechambre
+
+CREATE OR REPLACE TRIGGER trg_Typechambre
+BEFORE INSERT OR UPDATE OR DELETE
+ON Typechambre
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO archi_typechambre (tch_id, tch_libelle, tch_date, tch_manip)
+VALUES (:new.tch_id, :new.tch_libelle, SYSDATE, 'I');
+END IF;
+IF UPDATING THEN 
+UPDATE archi_typechambre
+SET TCH_LIBELLE = :new.TCH_LIBELLE,
+TCH_DATE = SYSDATE,
+TCH_MANIP = 'U'
+WHERE TCH_ID = :old.TCH_ID;
+END IF;
+IF DELETING THEN
+UPDATE archi_typechambre
+SET TCH_DATE = SYSDATE,
+TCH_MANIP = 'S'
+WHERE TCH_ID = :old.TCH_ID;
+END IF;
+END;
+
+-- Trigger pour archivage de Etablissement 
+
+CREATE OR REPLACE TRIGGER trg_Etablissement
+BEFORE INSERT OR UPDATE OR DELETE
+ON Etablissement
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO archi_etablissement (ETA_ID, ETA_NOM, ETA_RUE, ETA_CP, ETA_VILLE, ETA_TEL, ETA_MAIL, ETA_TYPE, ETA_CIVILRESP, ETA_NOMRESP, ETA_PRENOMRESP, ETA_DATE, ETA_MANIP)
+VALUES (:new.ETA_ID, :new.ETA_NOM, :new.ETA_RUE, :new.ETA_CP, :new.ETA_VILLE, :new.ETA_TEL, :new.ETA_MAIL, :new.ETA_TYPE, :new.ETA_CIVILRESP, :new.ETA_NOMRESP, :new.ETA_PRENOMRESP, SYSDATE, 'I');
+END IF;
+IF UPDATING THEN 
+UPDATE archi_etablissement
+SET ETA_NOM = :new.ETA_NOM,
+ETA_RUE = :new.ETA_RUE,
+ETA_CP = :new.ETA_CP,
+ETA_CIVILRESP = :new.ETA_CIVILRESP,
+ETA_NOMRESP = :new.ETA_NOMRESP,
+ETA_PRENOMRESP = :new.ETA_PRENOMRESP,
+ETA_DATE = SYSDATE,
+ETA_MANIP = 'U'
+WHERE ETA_ID = :old.ETA_ID;
+END IF;
+IF DELETING THEN
+UPDATE archi_etablissement
+SET ETA_DATE = SYSDATE,
+ETA_MANIP = 'S'
+WHERE ETA_ID = :old.ETA_ID;
+END IF;
+END;
+
+-- Trigger pour archivage de offre
+
+CREATE OR REPLACE TRIGGER trg_Offre
+BEFORE INSERT OR UPDATE OR DELETE
+ON Offre
+FOR EACH ROW
+BEGIN
+IF INSERTING THEN
+INSERT INTO archi_offre (off_etablissement, off_typechambre, off_nbchambres, off_date, off_manip)
+VALUES (:new.off_etablissement, :new.off_typechambre, :new.off_nbchambres, SYSDATE, 'I');
+END IF;
+IF UPDATING THEN 
+UPDATE archi_offre
+SET OFF_NBCHAMBRES = :new.OFF_NBCHAMBRES,
+OFF_DATE = SYSDATE,
+OFF_MANIP = 'U'
+WHERE OFF_ETABLISSEMENT = :old.OFF_ETABLISSEMENT
+AND OFF_TYPECHAMBRE = :old.OFF_TYPECHAMBRE;
+END IF;
+IF DELETING THEN
+UPDATE archi_offre
+SET OFF_DATE = SYSDATE,
+OFF_MANIP = 'S'
+WHERE OFF_ETABLISSEMENT = :old.OFF_ETABLISSEMENT
+AND OFF_TYPECHAMBRE = :old.OFF_TYPECHAMBRE;
+END IF;
+END;
